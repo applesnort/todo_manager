@@ -1,0 +1,5 @@
+<%= render "/helpers/form", task: @task %>
+<%= link_to "Delete #{@task.title}",
+            task_path(@task),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
